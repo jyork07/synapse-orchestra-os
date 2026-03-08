@@ -1,7 +1,8 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
+import { CommandPalette } from "@/components/CommandPalette";
 import { Outlet } from "react-router-dom";
-import { Bell } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 
 export default function SimonLayout() {
   return (

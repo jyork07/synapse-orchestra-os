@@ -16,7 +16,7 @@ import {
   Triangle, Truck, Type, Umbrella, Unlock, UserCheck, Voicemail,
   Wind, XCircle, Aperture, AtSign, Book, Cast, Chrome, Coffee,
   Command, Copy, Crosshair, Edit, ExternalLink, Feather, Film,
-  GitBranch, Gitlab, HelpCircle, Inbox, Info, Italic, Life,
+  GitBranch, Gitlab, HelpCircle, Inbox, Info, Italic, LifeBuoy,
   Lightbulb, LogIn, LogOut, Maximize2, Minimize, MoreHorizontal,
   Octagon, PauseCircle, Pocket, ShieldOff, Shuffle, SkipForward,
   Smartphone as SmartphoneIcon, Tablet, Trello, UserPlus, ZoomIn,

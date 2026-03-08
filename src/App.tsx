@@ -14,6 +14,7 @@ import Canvas from "./pages/Canvas";
 import Logs from "./pages/Logs";
 import SettingsPage from "./pages/Settings";
 import SimonAgent from "./pages/SimonAgent";
+import SkillCatalog from "./pages/SkillCatalog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

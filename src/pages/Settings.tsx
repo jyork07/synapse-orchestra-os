@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import {
   Settings, Wifi, Key, Globe, RefreshCw, CheckCircle2, XCircle,
   AlertTriangle, Activity, Server, Database, Cpu, Clock, Zap, Shield,
-  BarChart3, Terminal, HardDrive, Network, Docker, Lock, Download, Upload,
+  BarChart3, Terminal, HardDrive, Network, Lock, Download, Upload,
   FileText, Monitor, Power, Trash2, Archive, Mail, Bell, Users,
 } from "lucide-react";
 

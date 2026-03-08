@@ -14,6 +14,7 @@ import Canvas from "./pages/Canvas";
 import Logs from "./pages/Logs";
 import SettingsPage from "./pages/Settings";
 import SimonAgent from "./pages/SimonAgent";
+import SkillCatalog from "./pages/SkillCatalog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
               <Route path="/logs" element={<Logs />} />
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="/simon" element={<SimonAgent />} />
+              <Route path="/catalog" element={<SkillCatalog />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

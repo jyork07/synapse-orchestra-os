@@ -23,6 +23,7 @@ const pages = [
   { name: "Devices", icon: Cpu, path: "/devices" },
   { name: "Canvas", icon: LayoutDashboard, path: "/canvas" },
   { name: "Simon Agent", icon: User, path: "/simon" },
+  { name: "Skill Catalog", icon: Home, path: "/catalog" },
   { name: "Logs", icon: ScrollText, path: "/logs" },
   { name: "Settings", icon: Settings, path: "/settings" },
 ];

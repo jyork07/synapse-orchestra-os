@@ -1,5 +1,5 @@
 import {
-  Home, MessageSquare, Mic, Bot, Zap, Cpu, LayoutDashboard, ScrollText, Settings, Radio, User
+  Home, MessageSquare, Mic, Bot, Zap, Cpu, LayoutDashboard, ScrollText, Settings, Radio, User, Package
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
@@ -17,6 +17,7 @@ const navItems = [
   { title: "Devices", url: "/devices", icon: Cpu },
   { title: "Canvas", url: "/canvas", icon: LayoutDashboard },
   { title: "Simon Agent", url: "/simon", icon: User },
+  { title: "Skill Catalog", url: "/catalog", icon: Package },
   { title: "Logs", url: "/logs", icon: ScrollText },
   { title: "Settings", url: "/settings", icon: Settings },
 ];

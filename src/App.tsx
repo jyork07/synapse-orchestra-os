@@ -36,6 +36,7 @@ const App = () => (
               <Route path="/canvas" element={<Canvas />} />
               <Route path="/logs" element={<Logs />} />
               <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/simon" element={<SimonAgent />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

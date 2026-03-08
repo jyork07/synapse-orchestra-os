@@ -40,6 +40,7 @@ const App = () => (
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="/simon" element={<SimonAgent />} />
               <Route path="/catalog" element={<SkillCatalog />} />
+              <Route path="/openclaw" element={<OpenClawControl />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -1,7 +1,8 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
+import { CommandPalette } from "@/components/CommandPalette";
 import { Outlet } from "react-router-dom";
-import { Bell } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 
 export default function SimonLayout() {
   return (
@@ -18,6 +19,14 @@ export default function SimonLayout() {
               </div>
             </div>
             <div className="flex items-center gap-3">
+              <button
+                onClick={() => document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
+                className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary/50 border border-border/50 text-xs text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              >
+                <Search className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Search…</span>
+                <kbd className="hidden sm:inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-background/50 border border-border/50 text-[10px] font-mono">⌘K</kbd>
+              </button>
               <button className="relative p-2 rounded-lg hover:bg-secondary transition-colors">
                 <Bell className="w-4 h-4 text-muted-foreground" />
                 <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-primary" />
@@ -30,6 +39,7 @@ export default function SimonLayout() {
           <main className="flex-1 overflow-auto scrollbar-thin">
             <Outlet />
           </main>
+          <CommandPalette />
         </div>
       </div>
     </SidebarProvider>

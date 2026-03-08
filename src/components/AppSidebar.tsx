@@ -1,5 +1,5 @@
 import {
-  Home, MessageSquare, Mic, Bot, Zap, Cpu, LayoutDashboard, ScrollText, Settings, Radio
+  Home, MessageSquare, Mic, Bot, Zap, Cpu, LayoutDashboard, ScrollText, Settings, Radio, User
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";

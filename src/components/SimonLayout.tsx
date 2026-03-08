@@ -39,6 +39,7 @@ export default function SimonLayout() {
           <main className="flex-1 overflow-auto scrollbar-thin">
             <Outlet />
           </main>
+          <CommandPalette />
         </div>
       </div>
     </SidebarProvider>

@@ -36,7 +36,7 @@ const scenes = [
   { name: "Relax", desc: "Warm lights 30%, ambient music" },
 ];
 
-const [selectedRoom, setRoom] = ["All", () => {}]; // dummy for SSR
+
 
 export default function Devices() {
   const [activeRoom, setActiveRoom] = useState("All");

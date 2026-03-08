@@ -12,6 +12,7 @@ import {
 import {
   Home, MessageSquare, Mic, Bot, Zap, Cpu, LayoutDashboard, ScrollText, Settings, User,
   Lightbulb, Thermometer, Speaker, Lock, Camera, Shield, Sunrise, Moon, LogOut, Radio,
+  Package, Server, GitBranch, Key, Database, Globe,
 } from "lucide-react";
 
 const pages = [
@@ -19,13 +20,14 @@ const pages = [
   { name: "Chat", icon: MessageSquare, path: "/chat" },
   { name: "Voice Studio", icon: Mic, path: "/voice" },
   { name: "Agents", icon: Bot, path: "/agents" },
-  { name: "Automations", icon: Zap, path: "/automations" },
-  { name: "Devices", icon: Cpu, path: "/devices" },
-  { name: "Canvas", icon: LayoutDashboard, path: "/canvas" },
   { name: "Simon Agent", icon: User, path: "/simon" },
-  { name: "Skill Catalog", icon: Home, path: "/catalog" },
+  { name: "OpenClaw Control", icon: Cpu, path: "/openclaw" },
+  { name: "Automations", icon: Zap, path: "/automations" },
+  { name: "Devices", icon: Radio, path: "/devices" },
+  { name: "Canvas", icon: LayoutDashboard, path: "/canvas" },
+  { name: "Skill Catalog", icon: Package, path: "/catalog" },
   { name: "Logs", icon: ScrollText, path: "/logs" },
-  { name: "Settings", icon: Settings, path: "/settings" },
+  { name: "Server Admin", icon: Settings, path: "/settings" },
 ];
 
 const devices = [
@@ -52,6 +54,23 @@ const agents = [
   { name: "Voice Agent", icon: Mic, path: "/agents" },
 ];
 
+const openclawItems = [
+  { name: "Pipelines", icon: GitBranch, path: "/openclaw" },
+  { name: "Models", icon: Cpu, path: "/openclaw" },
+  { name: "Channels", icon: Radio, path: "/openclaw" },
+  { name: "API Keys", icon: Key, path: "/openclaw" },
+  { name: "Deployments", icon: Server, path: "/openclaw" },
+];
+
+const serverItems = [
+  { name: "Docker Containers", icon: Server, path: "/settings" },
+  { name: "Network Config", icon: Globe, path: "/settings" },
+  { name: "Storage Volumes", icon: Database, path: "/settings" },
+  { name: "Environment Variables", icon: Settings, path: "/settings" },
+  { name: "Backups", icon: Database, path: "/settings" },
+  { name: "Security", icon: Shield, path: "/settings" },
+];
+
 export function CommandPalette() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -74,7 +93,7 @@ export function CommandPalette() {
 
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
-      <CommandInput placeholder="Search pages, devices, automations, agents…" />
+      <CommandInput placeholder="Search pages, devices, automations, agents, OpenClaw…" />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Pages">
@@ -82,6 +101,15 @@ export function CommandPalette() {
             <CommandItem key={p.name} onSelect={() => go(p.path)}>
               <p.icon className="mr-2 h-4 w-4 text-muted-foreground" />
               {p.name}
+            </CommandItem>
+          ))}
+        </CommandGroup>
+        <CommandSeparator />
+        <CommandGroup heading="OpenClaw">
+          {openclawItems.map((o) => (
+            <CommandItem key={o.name} onSelect={() => go(o.path)}>
+              <o.icon className="mr-2 h-4 w-4 text-muted-foreground" />
+              {o.name}
             </CommandItem>
           ))}
         </CommandGroup>
@@ -109,6 +137,15 @@ export function CommandPalette() {
             <CommandItem key={a.name} onSelect={() => go(a.path)}>
               <a.icon className="mr-2 h-4 w-4 text-muted-foreground" />
               {a.name}
+            </CommandItem>
+          ))}
+        </CommandGroup>
+        <CommandSeparator />
+        <CommandGroup heading="Server Admin">
+          {serverItems.map((s) => (
+            <CommandItem key={s.name} onSelect={() => go(s.path)}>
+              <s.icon className="mr-2 h-4 w-4 text-muted-foreground" />
+              {s.name}
             </CommandItem>
           ))}
         </CommandGroup>

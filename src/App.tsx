@@ -13,6 +13,7 @@ import Devices from "./pages/Devices";
 import Canvas from "./pages/Canvas";
 import Logs from "./pages/Logs";
 import SettingsPage from "./pages/Settings";
+import SimonAgent from "./pages/SimonAgent";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

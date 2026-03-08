@@ -12,7 +12,7 @@ import {
   Minus, Move, Navigation, Paperclip, PenTool, Percent, PieChart,
   Play, Plus, Power, Printer, RefreshCw, Repeat, RotateCw, Scissors,
   Share, ShoppingCart, Sidebar, Sliders, Square, Sunrise, Sunset,
-  Tag, Target, ThumbsUp, ToggleLeft, Tool, Trash, TrendingUp,
+  Tag, Target, ThumbsUp, ToggleLeft, Wrench as ToolIcon, Trash, TrendingUp,
   Triangle, Truck, Type, Umbrella, Unlock, UserCheck, Voicemail,
   Wind, XCircle, Aperture, AtSign, Book, Cast, Chrome, Coffee,
   Command, Copy, Crosshair, Edit, ExternalLink, Feather, Film,

@@ -4,7 +4,7 @@ import {
   Bell, Sun, Moon, Cloud, Database, FileText, Headphones, Image,
   Key, Laptop, Mail, Map, Monitor, Phone, Radio, Rss, Search,
   Send, Server, Settings, Smartphone, Speaker, Terminal, Tv, Upload,
-  Users, Video, Volume2, Watch, Wrench, Activity, Alarm, Archive,
+  Users, Video, Volume2, Watch, Wrench, Activity, Archive,
   Award, BarChart, Battery, Bluetooth, Bookmark, Box, Briefcase,
   Calendar, Clipboard, Compass, Cpu, Disc, DollarSign, Droplet,
   Flag, Folder, Gift, Grid, HardDrive, Hash, Heart, Layers,
